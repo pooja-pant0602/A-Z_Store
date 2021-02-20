@@ -1,0 +1,21 @@
+@import '../app.component';
+
+div {
+    @include flexCenter(center);
+    color: $main-color;
+    .notfound {
+        @include flexCenter(center);
+        margin-top: 200px;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+        margin-left: 50px;
+    }
+
+    .error {
+        font-size: 60px;
+        margin-top: -50px;
+    }
+}

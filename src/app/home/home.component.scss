@@ -1,0 +1,20 @@
+@import '../app.component';
+
+.headings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main-color;
+    h1 {
+        margin-top: 200px;
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    h2 {
+        margin-top: 50px;
+        font-size: 30px;
+        text-align: center;
+        font-style: oblique;
+    }
+}
