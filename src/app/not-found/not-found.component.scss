@@ -1,16 +1,15 @@
 @import '../app.component';
 
 div {
-    @include flexCenter(center);
+    @include flexCenter(center, row);
     color: $main-color;
     .notfound {
-        @include flexCenter(center);
+        @include flexCenter(center, row);
         margin-top: 200px;
     }
 
     h1 {
-        font-size: 60px;
-        font-weight: 700;
+        @include heading(60px);
         margin-left: 50px;
     }
 

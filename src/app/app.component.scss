@@ -1,14 +1,21 @@
 $main-color: rgb(231, 120, 120);
 
-@mixin flexCenter($justify) {
+@mixin flexCenter($justify, $direction) {
     display: flex;
     justify-content: $justify;
     align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin heading($size) {
+    color: $main-color;
+    font-size: $size;
+    font-weight: 700;
 }
 
 nav {
     background: $main-color;
-    @include flexCenter(space-between);
+    @include flexCenter(space-between, row);
     h1 {
         color: #fff;
         font-weight: 700;

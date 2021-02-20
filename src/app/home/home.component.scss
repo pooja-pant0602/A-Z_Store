@@ -4,17 +4,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $main-color;
     h1 {
         margin-top: 200px;
-        font-size: 60px;
-        font-weight: 700;
+        @include heading(60px);
     }
 
     h2 {
         margin-top: 50px;
-        font-size: 30px;
-        text-align: center;
+        @include heading(30px);
         font-style: oblique;
+        text-align: center;
     }
 }

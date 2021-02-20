@@ -1,1 +1,11 @@
-<p>search works!</p>
+<div>
+    <h1>What are you looking for?</h1>
+</div>
+
+<mat-grid-list cols="3" rowHeight="200px" gutterSize="20px">
+    <mat-grid-tile *ngFor="let category of categories">
+        <mat-card>
+            {{category}}
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-
+  categories: string[] = ["Skincare", "Makeup", "Clothes", "Books", "Electronics", "Home Supplies"];
   constructor() { }
 
   ngOnInit(): void {
